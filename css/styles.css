@@ -304,6 +304,8 @@ body {
 }
 
 .projects-buttons {
+  padding: 6px 22px;
+  
   background-color: var(--second-grey-color);
   border: none;
 
