@@ -11,7 +11,6 @@
   --second-main-background-color: #e5e5e5;
   --icon-color: #afb1b8;
   --gradient-hero-color: rgba(47, 48, 58, 0.4);
-  --icon-color-team: #afb1b8;
 }
 /* Утилиты */
 .list {
@@ -106,7 +105,6 @@ body {
 .contacts-nav {
   display: flex;
   margin-left: auto;
-
 }
 .contacts-nav .item + .item {
   margin-left: 50px;
@@ -130,7 +128,7 @@ body {
   margin-right: 10px;
 }
 .contacts-icon:hover,
-.contacts-icon:focus{
+.contacts-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -303,7 +301,36 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* Наши клиенты */
+.title-clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+  color: var(--title-text-color);
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+
+.clients-icon {
+  display: block;
+  outline: 1px solid var(--icon-color);
+  border-radius: 5px;
+
+  border-color: var(--icon-color);
+
+  fill: var(--icon-color);
+}
+
+/* Подвал */
 .footer-logo {
   margin-bottom: 20px;
   font-family: "Raleway";
@@ -318,7 +345,6 @@ body {
 .footer {
   display: flex;
   padding: 60px 0;
-  align-items: baseline;
 
   background-color: var(--hero-bg-color);
 
@@ -329,6 +355,7 @@ body {
 }
 .address {
   margin-bottom: 9px;
+  margin-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -350,12 +377,15 @@ body {
 .footer-contacts .link:focus {
   color: var(--accent-color);
 }
-.footer-socials {
+.footer-info {
   display: flex;
+  align-items: baseline;
+}
+.footer-socials {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 206px;
+  padding-left: 70px;
 }
 .link-title {
   margin-bottom: 20px;
@@ -366,7 +396,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .projects-buttons {
@@ -466,5 +496,5 @@ body {
   background-color: var(--accent-color);
 }
 .socials-link:hover .socials-icon {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
