@@ -110,6 +110,8 @@ body {
   margin-left: 50px;
 }
 .contacts-nav .link {
+  display: flex;
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -122,14 +124,10 @@ body {
   color: #2196f3;
 }
 .contacts-icon {
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
+  display: inline-block;
+  align-items: center;
   margin-right: 10px;
-}
-.contacts-icon:hover,
-.contacts-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .hero {
@@ -322,12 +320,20 @@ body {
 
 .clients-icon {
   display: block;
-  outline: 1px solid var(--icon-color);
-  border-radius: 5px;
-
-  border-color: var(--icon-color);
-
+  margin: auto;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
   fill: var(--icon-color);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Подвал */
@@ -386,6 +392,12 @@ body {
   align-items: center;
   justify-content: center;
   padding-left: 70px;
+}
+.footer-socials .socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials .socials-icon {
+  fill: var(--primary-white-color);
 }
 .link-title {
   margin-bottom: 20px;
