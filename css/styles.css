@@ -111,6 +111,7 @@ body {
 }
 .contacts-nav .link {
   display: flex;
+  align-items: center;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
@@ -152,8 +153,9 @@ body {
 }
 
 .hero-title {
-  margin-bottom: 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -274,6 +276,7 @@ body {
   margin-left: 30px;
 }
 .team-list > .item {
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -317,23 +320,26 @@ body {
 .clients-list .item + .item {
   margin-left: 30px;
 }
-
-.clients-icon {
-  display: block;
-  margin: auto;
-  padding: auto;
+.clients-link {
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--icon-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.clients-icon {
   fill: var(--icon-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  border-color: var(--accent-color);
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: #2196f3;
 }
 
 /* Подвал */
@@ -388,10 +394,7 @@ body {
   align-items: baseline;
 }
 .footer-socials {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-left: 70px;
+  margin-left: 70px;
 }
 .footer-socials .socials-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -461,6 +464,10 @@ body {
   margin-left: 30px;
   background-color: var(--primary-white-color);
 }
+.project-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .projects-name {
   margin-bottom: 4px;
@@ -487,7 +494,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
 }
 
 .socials-link {
