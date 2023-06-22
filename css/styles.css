@@ -726,6 +726,10 @@ body {
   margin-bottom: 16px;
 }
 
+.checkbox-conteiner { 
+  margin-bottom: 24px;
+}
+
 .modal-input {
   padding-left: 38px;
   width: 100%;
@@ -808,6 +812,7 @@ body {
   font-weight: 400;
   display: flex;
   align-items: center;
+  
 }
 
 .check-text span {
@@ -836,6 +841,7 @@ body {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
+
 }
 .visually-hidden {
   position: absolute;
