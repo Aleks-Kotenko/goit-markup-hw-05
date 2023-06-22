@@ -805,6 +805,7 @@ body {
   letter-spacing: 0.48px;
 }
 .check-text {
+  display: inline-flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -864,15 +865,15 @@ body {
 
 .modal-send-btn {
   display: block;
+  align-items: center;
+  justify-content: center;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
+  margin: 24px 96px;
 
-  margin-left: 119px;
-  margin-top: 24px;
+
   border-radius: 4px;
-  padding: 10px 32px;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
